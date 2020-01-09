@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./src/css/main.css" />
+		<title>Rubex</title>
+	</head>
+	<body>
+		<div class="video-wrapper"></div>
+		<video src="./src/Pexels Videos 2516159.mp4" autoplay loop muted></video>
+		<nav>
+			<div class="left">
+				<div class="brand-logo">
+					<a href="/"><img src="./src/logo_rubex.png" alt="rubex"/></a>
+				</div>
+
+				<ul class="nav">
+					<li class="links"><a href="#">Classes</a></li>
+					<li class="links"><a href="#">Products</a></li>
+					<li class="links"><a href="#">About Us</a></li>
+				</ul>
+			</div>
+
+			<ul class="nav">
+				<a href="./login" class="btn">Login</a>
+				<button id="menu">
+					<i class="material-icons">menu</i>
+				</button>
+			</ul>
+
+			<ul class="mobile-menu">
+				<li>
+					<button id="close">
+						<i class="material-icons">close</i>
+					</button>
+				</li>
+				<li class="links"><a href="#">Classes</a></li>
+				<li class="links"><a href="#">Products</a></li>
+				<li class="links"><a href="#">About Us</a></li>
+				<li class="links"><a href="#">Login</a></li>
+			</ul>
+		</nav>
+
+		<section id="main">
+			<h1>Register To Experience A New Way Of Learning!</h1>
+			<button class="hero-btn">Let's Get Started</button>
+		</section>
+
+		<script>
+			const menu = document.querySelector('.mobile-menu');
+			const menuBtn = document.querySelector('#menu');
+			const close = document.querySelector('#close');
+
+			menuBtn.addEventListener('click', () => {
+				menu.classList.add('show');
+			});
+
+			close.addEventListener('click', () => {
+				menu.classList.remove('show');
+			});
+		</script>
+	</body>
+</html>
